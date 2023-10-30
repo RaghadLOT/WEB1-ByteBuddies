@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +25,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #12111f; */
 }
 
 .logo{
@@ -67,7 +67,6 @@ width: 100%;
     width: 100%;
     position:absolute;
     top: 40%;
-    /* transform:rotate(50%); */
     text-align: center;
     color: white;
 }
@@ -83,41 +82,27 @@ width: 100%;
 #Chr {
     border-width: 2px;
     margin-top: 20px;
-    /* color: #12111f; */
 }
 
 
   .Courses{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
+    flex-wrap: wrap;
     gap:1.5rem;
     margin-left: 3em;
     margin-right: 3em;
+    
   }
 
-  /* .Courses .C1 {
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-  }
-
-  .Courses .C2 {
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-  } */
   
   .Courses .box{
-    height: 300px;
-    width: 340px;
-    margin: 30px;
-    /* flex:1 1 30rem; */
+    flex:1 1 30rem;
     border-radius: .5rem;
-    border:2px solid #3f283e;
+    border:2px solid rgba(167, 167, 167, 0.845);
+    box-shadow: 0px 0px 10px #565656;
     padding:1rem;
-    position: relative;
+    position:relative;
+    margin: 5px;
   }
   
   .Courses .box img{
@@ -148,12 +133,11 @@ width: 100%;
     font-size: 1rem;
     padding:.5rem 0;
   }
+
   
   .review{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
+    flex-wrap: wrap;
     gap:1.5rem;
     margin-left: 3em;
     margin-right: 3em;
@@ -161,11 +145,12 @@ width: 100%;
   
   .review .box{
     height: 300px;
-    width: 340px;
-    margin: 30px;
-    /* flex:1 1 30rem; */
+    width: 260px;
+    margin: 15px;
+    flex:1 1 16rem;
     border-radius: .5rem;
-    border:2px solid #3f283e;
+    border:2px solid rgba(167, 167, 167, 0.845);
+    box-shadow: 0px 0px 10px #565656;
     padding:1rem;
     position: relative;
   }
@@ -180,29 +165,21 @@ width: 100%;
     display: flex;
     align-items: center;
   }
-/* 
-  .review .box  .Parent .Parent-info .info{
-    position: relative;
-  } */
 
-  .review .box .parent .star i.checked{
+  .review .box .star1 i.checked{
     color: #e179ac;
   }
 
-  .review .box .parent .star i{ 
+  .review .box .star1 i{ 
     color: rgb(18,17,31);
     font-size: 1.5rem;
-    padding:1rem 0;
+    padding: 0.5rem 0;
     position: relative;
-    /* top: 5em; */
-    /* float:right; */
+    /* float:left; */
+    width: 20px;
+    height: 20px;
   } 
   
-  /* .review .box .Parent span{
-    font-size: 6rem;
-    color:#e179ac;
-    opacity: .5;
-  } */
   
   .review .box .Parent .Parent-info img{
     border-radius: 50%;
@@ -222,4 +199,90 @@ width: 100%;
     padding:1rem 0;
     font-size: 1.6rem;
     color:#666;
+    align-items: center;
+  }
+ 
+
+  .footer {
+    background-color: #e179ac;
+
+  }
+
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .footer .box-container .box{
+    flex:1 1 20rem;
+    margin: 20px;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 1.5rem;
+    color:white;
+    padding: 0.7em 0;
+  }
+
+  .footer .box-container .box .headC{
+    display: grid;
+    text-align: center;
+    justify-content: left;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1rem;
+    color:white;
+    padding:.7rem 0;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    color:#666;
+    padding:.7rem 0;
+  }
+    
+  .footer .box-container .box a:hover{
+    color:pink;
+  }
+  
+  .footer .box-container .box p i{
+    padding-right: .5rem;
+    color:var(--pink);
+  }
+
+  /* .footer .box-container .box .followUs i{
+    padding: .5rem;
+    color:var(--pink);
+  } */
+  
+  .footer .credit{
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding:1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    color:#666;
+  }
+
+  .footer img {
+    height:200px;
+    width: 200px;
+    margin: 30px;
+  }
+
+  .followUs {
+    display:inline-flex;
+    justify-content: center;
+  }
+
+  .followUs a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
   }
