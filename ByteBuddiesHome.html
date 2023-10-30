@@ -5,10 +5,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--external style sheet for rating-->
         <link rel="stylesheet" href="BB.css">
         <!-- font awesome cdn link  -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
 
-    <body>
+    <body id="Home">
         <header>
         <div class="banner"> 
         <div class= "navbar"> <!--nav bar-->
@@ -30,14 +30,13 @@
 
         <main>
 
+            <!-- course section -->
             <h1 class="headings">Courses</h1>
             <hr id="Chr">
             <br>
-            <br> <!--there is a more efficient way-->
+            <br>
 
-            <section class="Courses">
-
-                <div class="C1">
+            <section class="Courses"> 
                 <div class="box">
 
                     <img src="photos/Course-1.png" alt="">
@@ -55,6 +54,7 @@
                             and versatility</p>
              
                 </div>
+
                 <div class="box">
 
                     <img src="photos/Course-2.png" alt="">
@@ -90,8 +90,6 @@
              
                 </div>
 
-            </div>
-            <div class="C2">
                 <div class="box">
 
                     <img src="photos/Course-4.png" alt="">
@@ -143,15 +141,15 @@
                             We deepen our understanding of concepts such as variables, functions, loops and conditionals.</p>
              
                 </div>
-            </div>
             </section>
             
+            <!-- review section -->
             <br>
             <h1 class="headings">Reviews</h1>
             <hr id="Chr">
             <br>
-            <br> <!--there is a more efficient way-->
-
+            <br>
+         
             <section class="review">
 
                 <div class="box">
@@ -163,14 +161,14 @@
                                 <h3>Oscar Estrada</h3>
                             </div>
                         </div>
-                        <div class="star">
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <!-- <span class="fas fa-quote-right"></span> -->
+                        
+                    </div>
+                    <div class="star1">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <p class="feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>A molestiae ipsa mollitia. Dolore sapiente animi ab eligendi voluptatum ipsa omnis.</p>
                 </div>
@@ -185,14 +183,14 @@
                                 <h3>phoebe Bridge</h3>
                             </div>
                         </div>
-                        <div class="star">
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                        </div>
-                        <!-- <span class="fas fa-quote-right"></span> -->
+                        
+                    </div>
+                    <div class="star1">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <p class="feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>A molestiae ipsa mollitia.</p>
                 </div>
@@ -207,14 +205,14 @@
                                 <h3>Micheal Austin</h3>
                             </div>
                         </div>
-                        <div class="star">
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                            <i class="fa fa-star checked"></i>
-                        </div>
-                        <!-- <span class="fas fa-quote-right"></span> -->
+                        
+                    </div>
+                    <div class="star1">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
                     </div>
                     <p class="feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>A molestiae ipsa mollitia.</p>
                 </div>
@@ -225,43 +223,36 @@
         
         <!-- footer section  -->
 
+        <hr id="Chr">
 <section class="footer">
 
     <div class="box-container">
 
         <div class="box">
-            <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
+
+            <h3>contact info</h3>
+            <div id="contactUs">
+            <p><i class="fas fa-phone"></i> +966 50000000 </p>
+            <p><i class="fas fa-envelope"></i> +011 4879456 </p>
+            <p><i class="fas fa-map-marker-alt"></i> Bytebuddies@info.com </p>
+        </div>
         </div>
 
         <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">course</a>
-            <a href="#">teacher</a>
-            <a href="#">price</a>
-            <a href="#">review</a>
-            <a href="#">contact</a>
+            
+            <h3 class="headC">follow us</h3>
+            <div class="followUs">
+            <a href="https://twitter.com/home">Twitter</a>
+            <a href="https://www.instagram.com/">instagram</a>
+            <a href="https://www.linkedin.com/feed/">linkedin</a>
+        </div>
         </div>
 
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
-            <a href="#">instagram</a>
-            <a href="#">linkedin</a>
-        </div>
-
-        <div class="box">
-            <h3>contact us</h3>
-           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
-           <p> <i class="fas fa-envelope"></i> studysmart@gmail.com </p>
-           <p> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </p>
-        </div>
+        <a href="ByteBuddiesHome.html"><img src="photos/logoBG.png" alt="ByteBuddies logo"></a>
 
     </div>
 
-    <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+    <div class="credit">©2023 ByteBuddies. All rights reserved.</div>
 
 </section>
     </body>
