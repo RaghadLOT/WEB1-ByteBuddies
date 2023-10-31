@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Register</title>
+    <style>
+        /* Add border style for form inputs */
+        input, select {
+            border: 1px solid black;
+            padding: 1px;
+            margin-bottom: 9px;
+            border-radius: 10px;
+            width: 50%;
+        }
+
+        /* Style for labels */
+        label {
+            font-weight: bold;
+        }
+
+        /* Add some spacing between elements */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Create a two-column layout */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column1 {
+            width: 30%;
+            float: left;
+            padding: 20px;
+           
+           
+           
+        }
+        .column2 {
+            width: 30%;
+            float: right;
+            padding: 20px;
+           
+            
+           
+            
+        }
+        .row{
+            background-color: #feb7d9;
+            height: 450px;
+        }
+        .container{
+            text-align:center ;
+            margin-top: 10px;
+        }
+        .btn{
+            border-radius:25px ;
+            background: gray;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 30px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.8s;
+            position: relative;
+            overflow: hidden;
+           top: 350px;
+        }
+        .btn:hover{
+            background-color: #e179ac;
+        }
+
+        /* Style for submit button */
+        /* input[type="submit"] {
+            
+            
+            background-color: rgb(81, 80, 80);
+            color: white;
+            padding: 10px 22px; 
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px; 
+           
+        }
+
+        input[type="submit"]:hover {
+            background-color: #feb7d9;
+        } */
+        
+        
+        
+        h2 {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .navbar{ /*يغير مكانه*/
+    position: sticky;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-color: #12111f; 
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #e179ac;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+width: 100%;
+}
+.vision{
+    font-size: xxx-large;
+    width: 100%;
+    position:absolute;
+    top: 40%;
+    transform:rotate(50%); 
+    text-align: center;
+    color: white;
+ }
+
+
+ .headings {
+    text-align: center;
+    margin-top: 50px;
+    color:  #12111f;
+    font-size: xx-large;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    font-size: 130%;
+    background-color:#12111f;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-blend-mode: lighten;
+    background-blend-mode: multiply;
+}
+h1{
+    font-family: 'Agency FB','sans-serif';
+}
+label{
+    font-family: 'Agency FB','sans-serif';
+}
+h2{
+    font-family: 'Agency FB','sans-serif';
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner"> 
+        <div class= "navbar"> <!--nav bar-->
+         <a href="ByteBuddiesHome.html"><img src="photos/logo.png" alt="ByteBuddies logo" class="logo"></a>
+         <ul> 
+             <li> <a href="#">Courses</a></li>
+             <li> <a href="#">Tutors</a></li>
+             <li> <a href="#">Parent</a></li>
+             <li> <a href="#">Administrator</a></li>
+         </ul>
+        </div> <!--nav bar end-->
+        <div class="vision"> <!--vision--> 
+            <!-- <h1>Empowering Young Minds,<br>One Line of Code at a Time</h1> -->
+           </div> <!--vision end--> 
+   
+           </div> 
+
+<br>
+<hr color="black" size="3px">
+           <h1>Add New Kid</h1>
+           <hr color="black" size="3px">
+          
+           
+          
+
+<form action="/submit_form" method="post" enctype="multipart/form-data">
+
+    <!-- Personal Information Section -->
+    <div class="row">
+        <div class="column1">
+            <h2>Personal Information:</h2>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="column2">
+            <h2>Contact Information:</h2>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+        </div>
+        <div class="container">
+            <button class="btn">Add Kid</button>
+        </div>
+    
+    </div>
+    <br>
+    <br>
+    <!-- <div class="container">
+        <button class="btn">Add Kid</button>
+    </div> -->
+    
+
+    <!-- <button style="font-size: 20px;background-color: gray;color: black;border-radius: 25px;" >Add kid</button>
+     -->
+   
+    
+
+    <!-- <div class="form-group">
+        <input type="submit" value="Add kid">
+    </div> -->
+    <hr color="black" size="3px">
+</form>
+
+</body>
+</html>
