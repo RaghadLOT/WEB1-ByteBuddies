@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrolment</title>
+    <style>
+        body {
+            font-family: 'Agency FB','sans-serif';
+            margin: 20px;
+        }
+       
+
+        h1 {
+            text-align: center;
+        }
+        h3{
+            
+    font-size: 20px;
+    color: #980089;
+    margin-bottom: 10px;
+    display: inline;
+    
+    }
+    
+
+        form {
+            max-width: 30px;
+            margin: 0 auto;
+        }
+
+        label, select, img {
+            display: block;
+            margin-bottom: 1px;
+        }
+
+        input[type="checkbox"] {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0;
+        }
+       
+        .label{
+            font-family:'Agency FB','sans-serif';
+            float: center;
+        }
+        .Course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    gap:1.5rem;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .Course .boox{
+    height: 300px;
+    width: 340px;
+    margin: 30px;
+    /* flex:1 1 30rem; */
+    border-radius: .5rem;
+    border:2px solid #3f283e;
+    padding:1rem;
+    position: relative;
+  }
+  
+  .Course .boox img{
+    height:11em;
+    width:14em;
+    margin-bottom: 2.5em;
+    margin-top: 0.5em;
+    position: relative;
+    border-radius: 70%;
+    border: 100% solid white;
+    border-color: white;
+    
+  }
+                               
+  
+    </style>
+</head>
+<body>
+    
+           <br>
+          
+           <label for="children">Select Kid:</label>
+        <select id="children" name="children">
+            <option value="child1">All Kids</option>
+            <option value="child1">Fatima</option>
+            <option value="child2">Ryan</option>
+            <option value="child3">Hessa</option>
+            <option value="child3">Emma</option>
+            <option value="child3">Ayesha</option>
+            <option value="child3">Maria</option>
+        </select>
+        
+        
+        <label for="tutor">Tutor:</label>
+        <select id="tutor" name="tutor">
+            <option value="All Tutors">All Tutors</option>
+            <option value="tutor2">T.Maha</option>
+            <option value="tutor3">T.Manal</option>
+            <option value="tutor3">T.Lama</option>
+            <option value="tutor3">T.Amal</option>
+        </select>
+        
+        <label for="prerequisite">Prerequisite:</label>
+        <select id="prerequisite" name="prerequisite">
+            <option value="prerequisite1">All prerequisite </option>
+            <option value="prerequisite1">Python</option>
+            <option value="prerequisite2">JavaScript</option>
+            <option value="prerequisite3">Scratch</option>
+        </select>
+    
+    <form action="#" method="post">
+         
+        
+        
+         <h3>Available Courses</h3>
+         
+
+         <section class="Course"> 
+           
+             <div class="boox">
+                
+
+                 <img src="CourseEnrol/Course-1.png" alt="">
+                 
+                      <h3>Python is fun</h3>
+                      <label><input type="checkbox" name="course" value="course1"></label><br>
+                      </div>
+                     
+                                <div class="boox">
+
+                                    <img src="CourseEnrol/Course-2.png" alt="">
+                                    
+                                        <h3>Game programming 1 with Python</h3>
+                                        <label><input type="checkbox" name="course" value="course2"></label><br>
+                                        
+                                        
+                                           
+                             
+                                </div>
+                
+                                <div class="boox">
+                
+                                    <img src="CourseEnrol/Course-3.png" alt="">
+                                    
+                                        <h3>Game Programming 1 With Javascript</h3>
+                                        <label><input type="checkbox" name="course" value="course3"></label><br>
+                                        
+                                        
+                                </div>
+                
+                                <div class="boox">
+                
+                                    <img src="CourseEnrol/Course-4.png" alt="">
+                                    
+                                        <h3>Game Programming 2 With Javascript</h3>
+                                        <label><input type="checkbox" name="course" value="course4"></label><br>
+                                        
+                                        
+                                </div>
+                
+                                <div class="boox">
+                
+                                    <img src="CourseEnrol/Course-5.png" alt="">
+                                    
+                                        <h3>Scratch Catch the Cat!</h3>
+                                        <label><input type="checkbox" name="course" value="course5"></label><br>
+                                        
+                                        
+                              
+                                </div>
+                
+                                <div class="boox">
+                
+                                    <img src="CourseEnrol/Course-6.png" alt="">
+                                   
+                                        <h3>Scratch Fruit Slash</h3>
+                                        <label><input type="checkbox" name="course" value="course6"></label><br>
+                                        
+                                         
+                                </div>
+                            </div>
+                            </section>
+
+        
+      
+        <input type="submit" value="Enrol">
+    </form>
+</body>
+</html>
