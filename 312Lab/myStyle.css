@@ -1,0 +1,27 @@
+
+h1 {
+    text-shadow: 0.2em 0.2em 0.1em silver;
+}
+
+body {
+    background: url('image/spoon.png') no-repeat center/10%, url('image/plaid.png') repeat;
+}
+
+ * {
+    border: medium solid;
+    
+}
+
+
+a:link {
+    color: green; 
+}
+
+a:visited {
+    color: gray; 
+}
+
+a:hover {
+    background-color: darkseagreen; 
+}
+

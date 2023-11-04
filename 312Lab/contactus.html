@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABC Hospital - Contact Us</title>
+<link rel="stylesheet" href="ABC.css">
+<style>dt{
+    font-weight: bold;
+    color: #0066cc; }
+    dl{
+        text-align: center;
+        line-height: 3em; }
+        </style>
+
+</head>
+<body>
+
+    <header>
+        <img src="image\hospital.png" alt="abc logo">
+        <h1>Welcome to ABC Hospital website</h1>
+        <nav><a href="index1.html">Hompage</a>&nbsp;&nbsp;&nbsp;<a href="aboutus.html">About us</a>&nbsp;&nbsp;&nbsp;<a href="contactus.html">Contact us</a></nav>
+        </header>
+        <aside>
+            <ul>
+            <li><a href="index1.html">Home page</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            </aside>
+<main>
+ <h2>Contact Our ABC Team</h2> 
+ 
+ <table>
+    <caption>Our team schedule</caption>
+    <thead>
+    <tr>
+        <th>Staff/Days</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Dr. Adam</th>
+        <td>8:00am-12:00pm</td>
+        <td>9:00am-2:00pm</td>
+        <td colspan="2">8:00am-12:00pm</td>
+        <td>12:00pm-5:00pm</td>
+    </tr>
+
+    <tr>
+        <th>Dr. Jones</th>
+        <td>8:00am-12:00pm</td>
+        <td colspan="4">12:00pm-5:00pm</td>
+    </tr>
+
+    <tr>
+        <th>Dr. Michael</th>
+        <td>8:00am-12:00pm</td>
+        <td colspan="2">1:00pm-5:00pm</td>
+        <td colspan="2">12:00pm-5:00pm</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Others</td>
+        <td colspan="5">Everyday from 8:00am-5:00pm</td>
+    </tr>
+    </tfoot>
+    </table>
+
+    
+    <h2>Send your message:</h2>
+    <p>Our team is happy to answer your questions. please fill out the bellow and we'll be in touch as soon as possible:</p>
+
+    <fieldset>
+    <legend>Patient information</legend>
+    <form action="submit_contact_form.php" method="post">
+       <ul>
+        <li><label for="first_name">First Name:</label>
+        <input type="text" name="first_name"></li>
+       
+        <li><label for="last_name">Last Name:</label>
+        <input type="text" name="last_name"></li>
+
+        <li><label>Gender:</label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label></li>
+
+        <li><label for="birthdate">Birthdate:</label></label>
+        <input type="date" name="birthdate"></li>
+
+        <li><label for="email">Email:</label>
+        <input type="email" name="email"></li>
+
+       <li><label for="telephone">Telephone:</label>
+        <input type="tel" name="telephone"></li>
+
+       <li><label for="department">Target Department:</label>
+        <select name="department">
+            <option value="in_patients">In-patients</option>
+            <option value="out_patients">Out-patients</option>
+            <option value="medical_affairs">Medical Affairs</option>
+        </select></li>
+         
+        <li><label>Message Type:</label></li>
+        <ol>
+            <li><input type="radio" name="message_type" value="complaint" >
+            <label for="complaint">Complaint</label></li>
+            <li><input type="radio" name="message_type" value="call_request">
+            <label for="call_request">Request a Call</label></li>
+            <li><input type="radio" name="message_type" value="mailing_list">
+            <label for="mailing_list">Request to Join Mailing List</label></li>
+            <li><input type="radio" name="message_type" value="other">
+            <label for="other">Other</label></li>
+        </ol>
+
+        <li><label for="message">Message:</label><br>
+        <textarea name="message"></textarea></li>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </ul>
+    </form>
+    </fieldset>
+    
+</main>
+
+
+
+<footer>
+<p>©2019 ABC Hospital</p>
+</footer>
+
+</body>
+</html>
