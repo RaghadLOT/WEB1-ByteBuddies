@@ -7,7 +7,15 @@
 </head>
 
 <body>
-    <section class="container">
+    <main>
+        <div class="doctors-list">
+            <label for="sort">Sort by:</label>
+            <select id="sort" onchange="sortTutors()">
+              <option value="asc">A-Z</option>
+              <option value="desc">Z-A</option>
+            </select>
+            
+            <section id="tutor-list" class="container">
         <div class="card">
             <div class="image">
                 <img src="imagesT/tutor1.jpeg" alt="tutor 1">
@@ -51,5 +59,47 @@
             <p>Teaching topics: Robotics</p>
         </div>
     </section>
+</main>
 </body>
+
+
+<script>
+function sortTutors() {
+    var selectElement = document.getElementById("sort");
+    var selectedValue = selectElement.value;
+    var tutorList = document.getElementById("tutor-list");
+    var tutors = tutorList.getElementsByClassName("card");
+
+    // Convert HTMLCollection to an array for easier manipulation
+    var tutorsArray = Array.from(tutors);
+
+    // Sort the tutors based on the selected option
+    if (selectedValue === "asc") {
+        tutorsArray.sort(function (a, b) {
+            var tutorA = a.getElementsByTagName("h2")[0].innerText.toUpperCase();
+            var tutorB = b.getElementsByTagName("h2")[0].innerText.toUpperCase();
+            return tutorA.localeCompare(tutorB);
+        });
+    } else if (selectedValue === "desc") {
+        tutorsArray.sort(function (a, b) {
+            var tutorA = a.getElementsByTagName("h2")[0].innerText.toUpperCase();
+            var tutorB = b.getElementsByTagName("h2")[0].innerText.toUpperCase();
+            return tutorB.localeCompare(tutorA);
+        });
+    }
+
+    // Remove existing tutors from the list
+    while (tutorList.firstChild) {
+        tutorList.removeChild(tutorList.firstChild);
+    }
+
+    // Append the sorted tutors back to the list
+    tutorsArray.forEach(function (tutor) {
+        tutorList.appendChild(tutor);
+    });
+}
+</script>
+
+
 </html>
+
